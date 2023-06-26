@@ -1,0 +1,23 @@
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+nav ul li a:hover {
+    color: #a951c4;
+}
