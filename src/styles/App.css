@@ -1,19 +1,26 @@
-.app {
-    text-align: center;
-  }
-  
-  .app-header {
-    background-color: #6a0572;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .app-link {
-    color: #a951c4;
-  }
-  
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  /* styles for your header */
+}
+
+main {
+  flex: 1; /* this allows main to grow and take up all remaining space */
+  display: flex; /* this makes main a flex container too, for the content and sidebar */
+}
+
+.content {
+  flex: 1; /* allows content to grow and take up remaining space */
+}
+
+.sidebar {
+  width: 200px;
+}
+
+footer {
+  /* styles for your footer */
+}

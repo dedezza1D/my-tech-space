@@ -1,21 +1,38 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-import Blog from './components/Blog';
-import './styles/App.css';
+import Navbar from './components/Navbar';
+import BlogPost from './components/BlogPost';
+import Sidebar from './components/Sidebar';
+//import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import BlogPage from './pages/BlogPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
     <Router>
-      <div className="app">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+      <div className="App">
+        <header>
+          <Navbar />
+        </header>
+
+        <main>
+          <div className="content">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/blog/:slug" component={BlogPost} />
+              <Route path="/blog" element={<BlogPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+            </Routes>
+          </div>
+          <aside className="sidebar">
+            <Sidebar />
+          </aside>
+        </main>
+
+
       </div>
     </Router>
   );
