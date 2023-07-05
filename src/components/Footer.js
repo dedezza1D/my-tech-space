@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import {faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
     return (
@@ -11,9 +11,6 @@ const Footer = () => {
                 <li><a href="/privacy-policy">Privacy Policy</a></li>
             </ul>
             <div className="footer-social">
-                <a href="https://twitter.com/example" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faTwitter} />
-                </a>
                 <a href="https://facebook.com/example" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faFacebook} />
                 </a>
